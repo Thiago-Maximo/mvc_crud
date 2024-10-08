@@ -17,7 +17,7 @@
             $this->cadastro->setData(date('Y-m-d',strtotime($_POST['data'])));
             $result = $this-> cadastro-> incluir();
             if($result >= 1){
-                echo"<script>alert('Registro incluido com Sucesso!');document.location='../view/cadastro.php'</script>";
+                echo"<script>alert('Registro incluido com Sucesso!');document.location='../view/index.php'</script>";
             }else{
                 echo"<script>alert('Erro ao gravar registro!, verifique se o livro não está duplicado');history.back()</script>";
             }

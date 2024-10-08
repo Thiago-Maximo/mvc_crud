@@ -16,7 +16,7 @@ Class listarController{
             echo"<th>".$dado['nome']."</th>";
             echo"<td>".$dado['autor']."</td>";
             echo"<td>".$dado['quantidade']."</td>";
-            echo"<td>".number_format($dado['preco'],2,",",".")."<td/>";
+            echo"<td>".number_format($dado['preco'],2,",",".")."</td>";
             echo"<td>".$dado['data']."</td>";
             echo"<td>".$dado['flag'] = ($dado['flag'] == "0")? "Desativado":"Ativado"."</td>";
             echo"<td>
@@ -26,8 +26,8 @@ Class listarController{
                 &nbsp&nbsp
                 <a class='btn btn-danger' href='../controller/ControllerDeletar.php?id=".$dado['nome']."'>
                     Excluir
-                </a><td>";
-                echo"</tr>";
+                </a></td>";
+            echo"</tr>";
         }
     }
 }
