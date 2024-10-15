@@ -12,7 +12,7 @@ Class listarController{
     private function criarTabela(){
         $dados = $this-> lista-> getLivro();
         foreach($dados as $dado){
-            echo"<tr>";
+            echo"<tr>";0
             echo"<th>".$dado['nome']."</th>";
             echo"<td>".$dado['autor']."</td>";
             echo"<td>".$dado['quantidade']."</td>";
